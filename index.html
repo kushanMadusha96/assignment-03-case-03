@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+
+        .div1{
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            border: 10px solid cadetblue;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 8888;
+        }
+        .div1>div{
+            width: calc(100% - 20px);
+            aspect-ratio:1/1;
+            border-radius: 100%;
+            border: 10px solid red;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        section{
+            position: absolute;
+            width: fit-content;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+        section>div{
+            width: 180px;
+            aspect-ratio:1/1;
+            background: orange;
+            border-radius: 100%;
+            margin-top: 263px;
+            position: relative;
+        }
+        section>div:first-child{
+            background: yellow;
+        }
+        section>div:nth-child(2){
+            background: orange;
+        }
+        section>div:last-child{
+            background: green;
+        }
+        section>div>span{
+            position: absolute;
+            color: white;
+            width: fit-content;
+            height: fit-content;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <div class="div1">
+        <div></div>
+    </div>
+    <section>
+        <div>
+            <span>hello</span>
+        </div>
+        <div>
+            <span>welcome</span>
+        </div>
+        <div>
+            <span>ijse</span>
+        </div>
+    </section>
+</div>
+</body>
+</html>
